@@ -1,0 +1,32 @@
+.mainPage {
+  opacity: 1;
+  min-height: 768px;
+  margin-bottom: 20px;
+}
+
+.buttonBlock {
+  a {
+    margin: 5px;
+  }
+}
+
+.badge,
+.chop {
+  margin: 10px;
+}
+
+.toolTipWrapper {
+  display: flex;
+  align-items: center;
+}
+.text {
+  width: 40%;
+}
+
+.tooltip {
+  margin: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+}

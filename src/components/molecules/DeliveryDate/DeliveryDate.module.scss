@@ -1,0 +1,53 @@
+@import '../../../styles/variables';
+
+$labelSize1: 150px;
+$labelSize2: 100px;
+@mixin colmunInit {
+  @include flexbox;
+  @include flexbox-justify-start;
+  @include flexbox-align-center;
+}
+
+.delivery {
+  padding: $contents-base-padding;
+}
+
+.subTitle {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  @include flexbox-align-center;
+  min-height: 55px;
+  padding: 6px 0;
+  border-bottom: 2px solid $color-border-light-gray;
+}
+
+.row {
+  @include flexbox;
+  @include flexbox-justify-start;
+  @include flexbox-align-center;
+  margin: 15px 0;
+  label {
+    display: block;
+    text-align: right;
+    padding-right: $contents-base-padding;
+  }
+  .columnSize1 {
+    @include colmunInit;
+    width: 100%;
+    label {
+      width: $labelSize1;
+    }
+    .inputWrap {
+      @include colmunInit;
+      width: calc(100% - #{$labelSize1});
+      height: 100%;
+    }
+  }
+  .inputItem1 {
+    width: 200px;
+  }
+  .inputItem2 {
+    width: 300px;
+    margin-right: 20px;
+  }
+}

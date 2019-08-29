@@ -1,0 +1,14 @@
+.textArea {
+  position: relative;
+  margin-top: 2vw;
+  border-color: #373e91;
+  width: 100%;
+  height: 100%;
+  padding: 1vw;
+  resize: none;
+  ::placeholder {
+    color: #373e91;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

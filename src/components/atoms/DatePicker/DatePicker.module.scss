@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.container {
+  input[type='text'] {
+    padding-right: 30px;
+    background-image: url('/images/common/icn-calendar.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px auto;
+    &:focus {
+      padding-right: 27px;
+      background-position: right 7px center;
+    }
+  }
+}

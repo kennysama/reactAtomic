@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+// @types
+.container {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  @include flexbox-align-start;
+  color: $color-font-sub;
+}
+.rightBlock {
+  display: table;
+  text-align: right;
+  font-size: $font-size16;
+  .listItem {
+    display: table-row;
+    div {
+      display: table-cell;
+      padding-bottom: 10px;
+    }
+    .left {
+      padding-right: 33px;
+    }
+    .tax {
+      font-size: $font-size12;
+    }
+    &.total {
+      color: $color-font-main;
+      font-weight: bold;
+      font-size: $font-size18;
+      .textPrice {
+        font-size: $font-size20;
+      }
+      .tax {
+        font-size: $font-size14;
+      }
+    }
+  }
+}
+.leftBlock {
+  font-size: $font-size18;
+  @include flexbox;
+  @include flexbox-wrap;
+  @include flexbox-align-start;
+  .listItem {
+    @include flexbox;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    .left {
+      margin-right: 10px;
+    }
+    &:first-child {
+      width: 100%;
+    }
+  }
+}

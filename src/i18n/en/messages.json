@@ -1,0 +1,294 @@
+{
+  "Home": {
+    "page": "Home",
+    "classification": "Orders Classification",
+    "product": "Product",
+    "remake": "Remake",
+    "sample": "Sample",
+    "orderSearch": "Order Search",
+    "fabricDelivery": "Inventory Search",
+    "classic": "Classic",
+    "modern": "Modern",
+    "formal": "Formal",
+    "shirt": "Shirt",
+    "women": "Women",
+    "suit": "Suit",
+    "jacket": "Jacket",
+    "trousers": "Trousers",
+    "vest": "Vest",
+    "tuxedo": "Tuxedo",
+    "longSleve": "Long Sleeve",
+    "shortSleve": "Short Sleeve",
+    "pants": "Pants",
+    "skirt": "Skirt",
+    "onePiece": "One Piece"
+  },
+
+  "Header": {
+    "homeTitle": "Home",
+    "shopId": "Shop ID",
+    "staffCode": "Staff Code"
+  },
+  "Footer": {
+    "save": "Save",
+    "confirm": "Confirm",
+    "home": "Home",
+    "next": "Next",
+    "prev": "Previous",
+    "orderContents": "Order Contents",
+    "order": "order",
+    "orderHandling": "To Order"
+  },
+  "OrdersSearchPage": {
+    "page": "Orders"
+  },
+  "Order": {
+    "page": "Order"
+  },
+  "InventorySearch": {
+    "page": "Inventory Search"
+  },
+  "SearchFilter": {
+    "title": "Search filter",
+    "category": "category",
+    "phone": "Phone Number",
+    "cardNo": "Members Card number",
+    "nameKana": "Name(kana)",
+    "nameKanji": "Name(kanji)",
+
+    "searchButton": "Search",
+    "paymentDate": "Payment date"
+  },
+  "DialogCustomerLoad": {
+    "title": "Logout Confilm",
+    "contentText": "Please select your logout account",
+    "cancelButtonLabel": "Cancel",
+    "logoutButtonLabel": "Logout",
+    "customerCheckBoxLabel": "Client Account Name is ",
+    "staffCheckBoxLabel": "Staff Account Name is "
+  },
+  "DialogRemarks": {
+    "title": "Remarks",
+    "closeButtonLabel": "Close"
+  },
+  "DialogInformation": {
+    "title": "Information",
+    "closeButtonLabel": "Close"
+  },
+  "DialogError": {
+    "title": "Error",
+    "closeButtonLabel": "Close"
+  },
+  "LoginPage": {
+    "title": "Login",
+    "description": "Log in to the order, settlement, and order issue service.",
+    "tempoCodeLabel": "store code",
+    "staffCodeLabel": "staff code",
+    "staffPasswordLabel": "staff password",
+    "loginButtonLabel": "Login",
+    "loggingInMessage": "trying login ..."
+  },
+  "MainPage": {
+    "pageTitle": "Main Page",
+    "dialogButtonLabel": "move to dialog sample page",
+    "orderSearchButtonLabel": "move to order search page",
+    "order": "to Order"
+  },
+  "OrderDigestsReport": {
+    "title": "Search results"
+  },
+  "Category": {
+    "cat1": "category 1",
+    "cat2": "category 2",
+    "cat3": "category 3"
+  },
+  "Partition":{
+    "store":"Store",
+    "warehouse":"Warehouse",
+    "factory":"factory",
+    "order":"Order"
+
+  },
+  "OrderDestination": {
+    "orderDestinationDialog": "store",
+    "shippingPostalCode": "Zip Code",
+    "zipCode": "Zip Code",
+    "shippingState": "City Area",
+    "shippingCity": "Prefecture",
+    "shippingResidence": "Address",
+    "name": "Name",
+    "save": "Save",
+    "change": "Change",
+    "title": "Delivery Destination",
+    "contactInfo": "Contact Information",
+    "phoneOne": "Phone Number 1",
+    "phoneTwo": "Phone Number 2",
+    "email": "Email"
+  },
+  "OrderDelivery": {
+    "save": "Save",
+    "change": "Change",
+    "title": "Delivery Date and Time",
+    "dayTime": "Day and Time",
+    "timeOfDay": "no time of day (shortest)",
+    "dispatchers": "dispatchers free of charge",
+    "expressCompanyName": "Sagawa Express",
+    "deliveryFee": "Delivery Fee"
+  },
+  "PointUsage": {
+    "save": "Save",
+    "change": "Change",
+    "title": "For Point Use",
+    "points": "usage points",
+    "currentPoints": "current points"
+  },
+  "ClothSelection": {
+    "page": "Cloth Selection"
+  },
+  "SizeCorrection": {
+    "page": "Size Correction",
+    "clothSelection": "Cloth Selection",
+    "designSelection": "Design Selection",
+    "sizeCorrection": "Size Correction"
+  },
+  "ClothSelectionContent": {
+    "save": "Save",
+    "change": "Change",
+    "fabricCode": "Fabric Code",
+    "option": "Option",
+    "deliveryDate": "Delivery Date",
+    "brand": "Brand",
+    "model": "Model",
+    "clothComposition": "Cloth Composition",
+    "partition": "partition",
+    "soldOut":"This cloth is currently out of stock. "
+  },
+
+  "PointCampaign": {
+    "save": "Save",
+    "change": "Change",
+    "title": "The Campaign I love This App",
+    "campaignCoupon": "use campaign coupon",
+    "PointsNotUsed": "Points Not Used"
+  },
+  "NoteContent": {
+    "title": "Note Content:",
+    "productTotal": "Product Total :",
+    "shippingFee": "Shipping Fee :",
+    "paymentFee": "Payment Fee :",
+    "usagePoints": "Usage Points :",
+    "total": "Total :"
+  },
+  "BalanceIntroducer": {
+    "introducer": "Introducer",
+    "none": "None",
+    "introduction": "Introduction",
+    "customerService": "Customer Service",
+    "measurements": "Measurements",
+    "referreCode": "Referre Code"
+  },
+  "DistributionCategory": {
+    "distributionCategory": "Distribution Category",
+    "salesMeeting": "Sales Meeting",
+    "customerCode": "Customer Code"
+  },
+  "OrderWithoutPayment": {
+    "orderWithoutPayment": "Order Without Payment"
+  },
+  "Balance": {
+    "balance": "Total Payment"
+  },
+  "SideBarTemplate": {
+    "clothSelection": "Cloth Selection",
+    "designSelection": "Design Selection",
+    "sizeCorrection": "Size Correction"
+  },
+  "CheckOutStatus": {
+    "status": "Status"
+  },
+  "Amount": {
+    "page": "Order"
+  },
+  "Settlement": {
+    "page": "Order"
+  },
+  "CashSelection": {
+    "cash": "In Case Of Cash"
+  },
+  "CreditSelection": {
+    "credit": "In the case of a credit card"
+  },
+  "OrderHandling": {
+    "destination": "Destination Confirmation",
+    "amount": "Amount Check",
+    "settlement": "Settlement"
+  },
+
+  "NudeDimensions": {
+    "nudeDimensions": "Nude Dimensions",
+    "update": "Update",
+    "measuringDate": "Measuring Date",
+    "totalLength": "Total Length",
+    "upperBody": "Upper Body",
+    "bust": "Bust",
+    "mediumCopper": "Medium Copper",
+    "waist": "Waist",
+    "circumference": "Waist Circumference",
+    "buttocks": "Buttocks",
+    "hips": "Hips",
+    "recommended": "Recommended Gauage",
+    "jacket": "Jacket",
+    "trousers": "Trouser",
+    "vest": "Vest",
+    "-": "-"
+  },
+  "InventorySearchFilter": {
+    "selectOptions": "Select 1 or More",
+    "brand": "Brand",
+    "byPeriod": "By Period",
+    "itemNumber": "Item Number",
+    "inventoryStatus": "Inventory Status",
+    "enoughStock": "There is Enough Stock",
+    "littleStock": "There is Little Stock",
+    "noStock": "No Stock",
+    "search": "Search",
+    "reset": "Reset"
+  },
+  "InventorySearchResults": {
+    "label": "Search Results"
+  },
+  "OrderContentConfirmation": {
+    "page": "Order Content Confirmation"
+  },
+  "TotalPaymentDetails": {
+    "mainLabel": "Total Payment",
+    "order": "Order",
+    "basePrice": "Base Price :",
+    "optionPrice": "Options Price :",
+    "productTotal": "Product Total :",
+    "totalPrice": "Total",
+    "deliveryDate": "Delivery Date"
+  },
+  "OrderListClothConfirmation": {
+    "cloth": "Cloth"
+  },
+  "designatedAddressDialog": {
+    "dialogTitle": "Please select a store",
+    "cancelBtn": "Cancel",
+    "inputBtn": "Select"
+  },
+  "DateRangePicker": {
+    "from": "From"
+  },
+  "PrivacyPolicy": {
+    "page": "Privacy Policy"
+  },
+  "CustomerLoginInfo": {
+    "customerName": "Name",
+    "customerId": "ID",
+    "customerLoadButton": "Load"
+  },
+  "Selectbox": {
+    "defaultMessage": "Select"
+  }
+}

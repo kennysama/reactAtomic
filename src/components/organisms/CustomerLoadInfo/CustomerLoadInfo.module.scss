@@ -1,0 +1,43 @@
+@import '../../../styles/variables';
+
+.customerWrapper {
+  @include flexbox;
+  @include flexbox-justify-start;
+  @include flexbox-align-center;
+  padding-left: 40px;
+  background-image: url('/images/common/icn-account.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 22px auto;
+}
+.text {
+  display: table;
+  color: $color-font-white;
+  dl {
+    display: table-row;
+    dt {
+      display: table-cell;
+      padding: 4px 20px 4px 0;
+      font-weight: normal;
+      text-align: left;
+      vertical-align: middle;
+    }
+    dd {
+      display: table-cell;
+      padding: 4px 0;
+      text-align: left;
+      vertical-align: middle;
+    }
+  }
+}
+.button {
+  margin-left: 20px;
+}
+
+@include layout-portrait {
+  //縦もち時
+  .customerWrapper {
+    padding-left: 0;
+    background-image: none;
+  }
+}

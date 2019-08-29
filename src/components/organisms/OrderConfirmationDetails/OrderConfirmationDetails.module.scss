@@ -1,0 +1,23 @@
+.orderConfirmationItemsDetails {
+  background-color: #f6e9d0;
+  .item {
+    text-align: center;
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+        padding-left: 5%;
+      }
+    }
+    .content {
+      background: white;
+      width: 97%;
+      position: relative;
+      left: 3%;
+      padding: 2rem;
+    }
+  }
+}

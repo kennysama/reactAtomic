@@ -1,0 +1,78 @@
+@import '../../../styles/variables';
+
+$inputMargin: 50px;
+$labelSize1: 90px;
+$labelSize2: 70px;
+$btnSize: 200px;
+@mixin colmunInit {
+  @include flexbox;
+  @include flexbox-justify-start;
+  @include flexbox-align-center;
+}
+
+.inventorySearchFilter {
+  height: $inventory-search-filter-height;
+  padding: $contents-base-padding;
+
+  .row {
+    @include flexbox;
+    @include flexbox-justify-space-between;
+    @include flexbox-align-center;
+    margin-bottom: $contents-base-padding;
+    label {
+      display: block;
+    }
+    .columnSize1 {
+      @include colmunInit;
+      width: calc((100% - #{$inputMargin} * 2) / 3);
+      label {
+        width: $labelSize1;
+      }
+      .inputWrap {
+        width: calc(100% - #{$labelSize1});
+      }
+    }
+    .columnSize2 {
+      @include colmunInit;
+      width: calc((100% - #{$inputMargin} * 2) / 3);
+      label {
+        width: $labelSize2;
+      }
+      .inputWrap {
+        width: calc(100% - #{$labelSize2});
+      }
+    }
+  }
+  .rowBtn {
+    @include flexbox;
+    @include flexbox-justify-space-between;
+    @include flexbox-align-center;
+    .columnSize3 {
+      @include flexbox-grow;
+      @include colmunInit;
+      label {
+        width: $labelSize1;
+      }
+      .inputWrap {
+        width: calc(100% - #{$labelSize1});
+      }
+    }
+    .columnSize4 {
+      @include colmunInit;
+      width: $btnSize;
+    }
+  }
+}
+
+@include layout-portrait {
+  //縦もち時
+  .inventorySearchFilter {
+    height: $inventory-search-filter-height-portrait;
+    .rowBtn {
+      @include flexbox-row;
+      .columnSize4 {
+        width: 150px;
+      }
+    }
+  }
+}

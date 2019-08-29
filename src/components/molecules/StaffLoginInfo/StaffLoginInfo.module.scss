@@ -1,0 +1,22 @@
+@import '../../../styles/variables';
+
+.staffWrapper {
+  display: table;
+  color: $color-font-white;
+  dl {
+    display: table-row;
+    dt {
+      display: table-cell;
+      padding: 4px 20px 4px 0;
+      font-weight: normal;
+      text-align: left;
+      vertical-align: middle;
+    }
+    dd {
+      display: table-cell;
+      padding: 4px 0;
+      text-align: left;
+      vertical-align: middle;
+    }
+  }
+}

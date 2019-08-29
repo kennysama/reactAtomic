@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+.header {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  @include flexbox-align-center;
+  padding: 30px $contents-base-padding 25px $contents-base-padding;
+}
+.gallery {
+  padding: 0 $contents-base-padding 30px $contents-base-padding;
+}
+
+@include layout-portrait {
+  //縦もち時
+  .header {
+    display: block;
+  }
+}
+
+.temporalRemoveAfterFuruyaSan {
+  //アイテムを選択した後にレンダリングする
+  //一時的に削除しない
+  position: fixed;
+}

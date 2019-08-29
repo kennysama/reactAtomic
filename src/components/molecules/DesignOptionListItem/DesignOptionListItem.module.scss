@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+// @types
+// .container {
+// }
+
+.item {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  @include flexbox-align-center;
+}
+.left {
+  width: 94px;
+  padding-right: 10px;
+  font-size: $font-size16;
+  color: $color-font-sub;
+  text-align: right;
+}
+.right {
+  width: calc(100% - 94px);
+  height: 100%;
+}
+
+// TODO: 保留
+.selector {
+  height: 0px;
+  visibility: hidden;
+}

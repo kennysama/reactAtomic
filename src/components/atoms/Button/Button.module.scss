@@ -1,0 +1,253 @@
+// @types
+@import '../../../styles/variables';
+
+.btn {
+  display: inline-block;
+  min-width: 157px;
+  padding: 13px 25px;
+  background: $color-bg-brown;
+  border-radius: $botton-radius;
+  font-size: $font-size14;
+  color: $color-font-white;
+  text-align: center;
+  &:disabled {
+    opacity: 0.5;
+  }
+  @include layout-portrait {
+    //縦もち時
+    & {
+      min-width: 50px;
+    }
+  }
+}
+
+.black {
+  background: $color-bg-black;
+}
+.white {
+  padding: 11px 23px;
+  background: $color-bg-white;
+  border: 1px solid $color-border;
+  color: $color-font-main;
+}
+.dark {
+  background: $color-bg-dark-brown;
+}
+.red {
+  background: $color-bg-red;
+}
+.pink {
+  background: $color-bg-pale-red;
+  color: $color-font-dull-red;
+}
+.square {
+  border-radius: 0;
+}
+.xs {
+  min-width: 65px;
+  padding: 6px 10px;
+  &.white {
+    padding: 4px 8px;
+  }
+  @include layout-portrait {
+    //縦もち時
+    & {
+      min-width: 50px;
+    }
+  }
+}
+.s {
+  min-width: 100px;
+  padding: 10px 25px;
+  &.white {
+    padding: 8px 23px;
+  }
+  @include layout-portrait {
+    //縦もち時
+    & {
+      min-width: 50px;
+    }
+  }
+}
+.l {
+  min-width: 160px;
+  padding: 15px 25px;
+  &.white {
+    padding: 13px 23px;
+  }
+  @include layout-portrait {
+    //縦もち時
+    & {
+      min-width: 50px;
+    }
+  }
+}
+.xl {
+  min-width: 200px;
+  padding: 15px 25px;
+  font-size: $font-size20;
+  &.white {
+    padding: 13px 23px;
+  }
+  @include layout-portrait {
+    //縦もち時
+    & {
+      min-width: 50px;
+    }
+  }
+}
+.block {
+  display: block;
+  width: 100%;
+}
+.center {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.right {
+  display: table;
+  margin-left: auto;
+}
+.arwLeft {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: url('/images/common/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: 11px center;
+  background-size: 8px auto;
+  @include layout-portrait {
+    //縦もち時 アイコンだけにする場合
+    &.layoutPortraitIconButton {
+      padding-left: 0;
+      padding-right: 0;
+      min-width: 40px;
+      width: 40px;
+      background-position: center center;
+      span {
+        display: block !important;
+        width: 0;
+        text-indent: -9999px;
+        text-align: left !important;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.arwRight {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: url('/images/common/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+  background-size: 8px auto;
+  @include layout-portrait {
+    //縦もち時 アイコンだけにする場合
+    &.layoutPortraitIconButton {
+      padding-left: 0;
+      padding-right: 0;
+      min-width: 40px;
+      width: 40px;
+      background-position: center center;
+      span {
+        display: block !important;
+        width: 0;
+        text-indent: -9999px;
+        text-align: left !important;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.logout {
+  min-width: 100px;
+  padding: 0 0 0 10px;
+  border: 1px solid $color-border-gray;
+  span {
+    display: inline-block;
+    padding: 10px 10px 10px 23px;
+    background-image: url('/images/common/icn-logout.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 13px auto;
+  }
+}
+.search {
+  min-width: 130px;
+  padding: 0 0 0 16px;
+  span {
+    display: inline-block;
+    padding: 13px 20px 13px 25px;
+    background-image: url('/images/common/icn-search.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 18px auto;
+    font-size: $font-size16;
+  }
+}
+.home {
+  padding: 0 10px;
+  span {
+    display: table;
+    margin: 0 auto;
+    padding: 13px 0 13px 25px;
+    background-image: url('/images/common/icn-home.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 17px auto;
+  }
+  @include layout-portrait {
+    //縦もち時 アイコンだけにする場合
+    &.layoutPortraitIconButton {
+      padding-left: 0;
+      padding-right: 0;
+      min-width: 40px;
+      width: 40px;
+      background-image: url('/images/common/icn-home.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 17px auto;
+      span {
+        display: block;
+        margin: 0;
+        width: 0;
+        background-image: none;
+        text-indent: -9999px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.cart {
+  padding: 0 0 0 17px;
+  &.arwLeft {
+    padding: 0 0 0 31px;
+  }
+  span {
+    display: table;
+    margin: 0 auto;
+    padding: 13px 33px 13px 33px;
+    background-image: url('/images/common/icn-cart.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 28px auto;
+  }
+}
+.footerRight {
+  // 今や親は "display flex"を持っているので、これは必要ないと思います。
+  // @include flexbox;
+  // @include flexbox-justify-center;
+  // @include flexbox-align-center;
+  min-width: 180px;
+  height: 100%;
+  padding: 10px 10px;
+  font-size: $font-size20;
+  span {
+    display: block;
+  }
+  &:disabled {
+    opacity: 1;
+    background: $color-link-disabled;
+  }
+}

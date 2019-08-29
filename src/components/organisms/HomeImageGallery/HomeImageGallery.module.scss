@@ -1,0 +1,47 @@
+@import '../../../styles/variables';
+
+.homeImageGallery {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+}
+.item {
+  width: calc((100% - 80px) / 5);
+  background: linear-gradient(180deg, $color-bg-white 62%, rgba(255, 255, 255, 0) 100%);
+  border-radius: $box-radius;
+  overflow: hidden;
+}
+
+.header {
+  .title {
+    padding: 14px 10px 12px 10px;
+    text-align: center;
+    font-size: $font-size16;
+  }
+  .image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.buttonBlock {
+  padding: 10px;
+  .button {
+    margin-bottom: 10px;
+  }
+}
+@include layout-portrait {
+  //縦もち時
+  .homeImageGallery {
+    @include flexbox-wrap;
+    @include flexbox-justify-start;
+  }
+  .item {
+    width: calc((100% - 40px) / 3);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}

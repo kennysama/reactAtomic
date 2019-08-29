@@ -1,0 +1,15 @@
+// @types
+#container {
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+  .wrapper {
+    width: 80%;
+    * {
+      margin: 5px;
+    }
+    .textArea {
+      height: 300px;
+    }
+  }
+}

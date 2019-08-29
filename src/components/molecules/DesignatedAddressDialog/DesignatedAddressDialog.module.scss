@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.designatedAddressDialog {
+  width: 80vw !important;
+  height: 60vw !important;
+  padding: 0 !important;
+
+  .left {
+    float: left;
+    width: 50%;
+    .header {
+      border: 1px solid $footer-background-color !important;
+      padding: 0 !important;
+      padding-left: 1rem !important;
+      background-color: $footer-background-color !important;
+      min-height: 3rem !important;
+      height: 3rem !important;
+      .title {
+        font-weight: bolder !important;
+      }
+    }
+    .content {
+      border: 1px solid rgb(146, 182, 225) !important;
+      padding-left: 2px !important;
+    }
+  }
+
+  .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    .content {
+      padding: 2rem 0 0 1rem;
+      position: absolute;
+    }
+  }
+
+  .actions {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 1rem 1rem 0;
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../../styles/variables';
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  @include flexbox-align-center;
+  width: 100%;
+  height: $header-height;
+  background: $color-header-bg;
+  box-shadow: $box-shadow;
+  color: $color-font-white;
+}
+.leftBlock {
+  @include flexbox-grow;
+  padding: 0 0 0 $contents-base-padding;
+}
+.rightBlock {
+  @include flexbox;
+  @include flexbox-justify-end;
+  @include flexbox-align-center;
+  padding: 0 $contents-base-padding 0 0;
+}
+.staff {
+  margin-right: 60px;
+}
+.customer {
+  margin-right: 60px;
+}
+// .logout {
+// }
+
+@include layout-portrait {
+  //縦もち時
+  .header {
+    display: block;
+    height: calc(#{$header-height} * 2);
+  }
+  .leftBlock {
+    @include flexbox;
+    @include flexbox-align-center;
+    height: $header-height;
+    padding: 0 $contents-base-padding;
+    border-bottom: 1px solid $color-border-dark-gray;
+  }
+  .rightBlock {
+    @include flexbox-justify-space-between;
+    height: $header-height;
+    padding: 0 $contents-base-padding;
+  }
+}

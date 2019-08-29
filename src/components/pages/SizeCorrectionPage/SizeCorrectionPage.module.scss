@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+
+// @types
+$leftWidth: 330px;
+
+#container {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+
+  .nudeDimension {
+    width: $leftWidth;
+    padding: 0 $contents-base-padding;
+  }
+  .sideAdjust {
+    width: calc(100% - #{$leftWidth});
+    padding: 0 $contents-base-padding 0 0;
+  }
+}

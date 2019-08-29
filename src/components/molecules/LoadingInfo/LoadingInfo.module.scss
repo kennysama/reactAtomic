@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.info {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: $color-filter;
+
+  > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.isLoading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include flexbox;
+  @include flexbox-justify-center;
+  @include flexbox-align-center;
+}
+.absolute {
+  @include flexbox;
+  @include flexbox-justify-center;
+  @include flexbox-align-center;
+  .isLoading {
+    display: block;
+    z-index: 9999;
+  }
+}

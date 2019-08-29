@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+// @types
+.panel {
+  .title {
+    @include flexbox;
+    @include flexbox-justify-space-between;
+    @include flexbox-align-center;
+    padding: 14px $contents-base-padding;
+    background: $color-headline-bg;
+    h2 {
+      font-size: $font-size18;
+    }
+  }
+  // .detail {
+  // }
+}

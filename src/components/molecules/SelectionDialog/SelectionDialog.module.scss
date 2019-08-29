@@ -1,0 +1,11 @@
+// @types
+#container {
+  .contents {
+    min-height: 300px;
+    min-width: 400px;
+    .text {
+      max-width: 95%;
+      word-wrap: break-word;
+    }
+  }
+}

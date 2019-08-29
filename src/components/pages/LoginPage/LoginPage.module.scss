@@ -1,0 +1,108 @@
+@import '../../../styles/variables';
+
+.flag {
+  // flagあり
+  // display: table;
+  margin: 0 0 0 auto;
+  padding: 20px $contents-base-padding;
+  padding-bottom: 25px;
+  // flagなし
+  display: none;
+}
+
+$page-min-height: calc(100vh - 65px - 85px);
+// flagあり　$page-min-height: calc(100vh - 115px - 85px - 20px - 47px);
+.page {
+  padding: 20px 60px;
+  // flagなし
+  padding-top: 65px;
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  .formblock {
+    width: 50%;
+    min-height: $page-min-height;
+    padding: 40px 45px 45px 45px;
+    background: $color-bg-white;
+    border-radius: $box-radius;
+    box-shadow: $box-shadow;
+    .title {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .message {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .inputGroup {
+      margin-bottom: 38px;
+    }
+  }
+  .informationblock {
+    @include flexbox;
+    @include flexbox-justify-space-between;
+    @include flexbox-column;
+    width: calc(50% - 20px);
+    min-height: $page-min-height;
+    .logoblock {
+      @include flexbox-grow;
+      @include flexbox;
+      @include flexbox-justify-center;
+      @include flexbox-column;
+      text-align: center;
+      .logo {
+        margin-bottom: 40px;
+        img {
+          width: 222px;
+          height: auto;
+        }
+      }
+      .message {
+        font-size: $font-size18;
+        color: $color-font-light-gray;
+        font-weight: bold;
+        &:after {
+          content: '';
+          display: block;
+          width: 45px;
+          height: 2px;
+          margin: 10px auto 0 auto;
+          background: $color-font-light-gray;
+        }
+      }
+    }
+    .information {
+      .title {
+        display: table;
+        padding: 7px;
+        background: $color-bg-brown;
+        color: $color-font-white;
+        font-weight: bold;
+        font-size: $font-size12;
+      }
+      .iFrame {
+        height: 120px;
+        margin-top: 15px;
+        -webkit-overflow-scrolling: touch;
+        overflow: auto;
+      }
+    }
+  }
+}
+@include layout-portrait {
+  //縦もち時
+  .page {
+    @include flexbox-column;
+    .informationblock {
+      width: 100%;
+      min-height: 10px;
+      margin-bottom: 40px;
+      .information {
+        margin: 40px 0;
+      }
+    }
+    .formblock {
+      width: 100%;
+      min-height: 10px;
+    }
+  }
+}

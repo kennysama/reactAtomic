@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+// @types
+.sidebar {
+  .button {
+    padding: 0 $contents-base-padding;
+    > button {
+      margin: 10px 0;
+    }
+  }
+}

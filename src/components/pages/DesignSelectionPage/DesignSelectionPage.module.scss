@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+
+// @types
+
+.page {
+  .content {
+    @include flexbox;
+  }
+  .sidebar {
+    position: relative;
+    z-index: 2;
+    width: 314px;
+    height: calc(100vh - #{$header-height} - #{$footer-height} - #{$stepper-height});
+    padding-bottom: $browser-toolbar-height;
+    overflow-y: scroll;
+    background-color: $color-bg-white;
+    box-shadow: $box-shadow;
+  }
+
+  .sideContent {
+    width: calc(100% - 314px);
+    position: relative;
+    z-index: 2;
+    padding: 0 $contents-base-padding 0 15px;
+    .header {
+      height: $design-selection-header-height;
+    }
+  }
+}

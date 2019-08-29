@@ -1,0 +1,60 @@
+@import '../../../styles/variables';
+
+.title {
+  font-size: $font-size20;
+  font-weight: bold;
+}
+.login {
+  font-size: $font-size26;
+  color: $color-font-gray;
+}
+.right {
+  text-align: right;
+}
+.bold {
+  font-weight: bold;
+}
+
+.blue {
+  color: $color-font-blue;
+}
+.white {
+  color: $color-font-white;
+}
+.red {
+  color: $color-font-red;
+}
+.gray {
+  color: $color-font-sub;
+}
+
+.bgBrightBrown {
+  padding: 22px $contents-base-padding;
+  background: $color-headline-bg;
+  font-size: $font-size20;
+}
+.lineLightBrown {
+  padding-bottom: 8px;
+  border-bottom: 4px solid $color-headline-line;
+  color: $color-font-light-brown;
+  font-size: $font-size20;
+}
+
+.medium {
+  font-size: $font-size16;
+}
+.small {
+  font-size: $font-size14;
+}
+.large {
+  font-size: $font-size24;
+}
+
+// TODO: 後で直す
+.aqua {
+  color: #2f67a8;
+}
+.black {
+  // FIXME: not function
+  color: #000 !important;
+}

@@ -1,0 +1,61 @@
+// @types
+
+// 仮
+$width-3: 100% / 3;
+$width-left-block: 30%;
+$width-harf: 50%;
+$width-center-block: 15%;
+$width-right-block: 65%;
+$width-numeric-input: 80%;
+$width-diff: 20%;
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  .top {
+    width: 100%;
+    @extend %flex;
+
+    .left {
+      @extend %flex;
+      width: $width-left-block;
+      .button {
+        width: $width-harf;
+      }
+      .date {
+        border: 1px solid #000;
+        width: $width-harf;
+      }
+    }
+    .center {
+      width: $width-center-block;
+      .label {
+        width: 100%;
+      }
+      .gauge {
+        width: 100%;
+      }
+    }
+    .right {
+      @extend %flex;
+      width: $width-right-block;
+      .title {
+        width: $width-numeric-input;
+        font-size: 18px;
+      }
+      .diff {
+        width: $width-diff;
+      }
+    }
+  }
+  .measure {
+    width: 100%;
+  }
+  .special {
+    width: 100%;
+  }
+}

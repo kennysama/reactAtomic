@@ -1,0 +1,8 @@
+.tabbar {
+  z-index: 10;
+  &__wrapper {
+    &__tab {
+      min-width: 30px;
+    }
+  }
+}

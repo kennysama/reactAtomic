@@ -1,0 +1,13 @@
+.payementDetails {
+  padding: 1rem;
+  .content {
+    border: 1px solid grey;
+    background-color: white;
+    padding: 1rem;
+    .row {
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+    }
+  }
+}

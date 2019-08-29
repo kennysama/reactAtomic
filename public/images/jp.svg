@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="Untitled-%u30DA%u30FC%u30B8%201" viewBox="0 0 71 47" style="background-color:#ffffff00" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="71px" height="47px"
+>
+	<defs>
+		<clipPath id="mask1">
+			<path d="M 0 0 L 71 0 L 71 47 L 0 47 L 0 0 Z" fill="none"/>
+		</clipPath>
+				<clipPath id="mask2">
+					<path d="M -4.7856 0 L 75.7856 0 L 75.7856 47 L -4.7856 47 L -4.7856 0 Z" fill="none"/>
+				</clipPath>
+	</defs>
+	<g id="%u30EC%u30A4%u30E4%u30FC_1_1">
+			<path d="M 0 0 L 71 0 L 71 47 L 0 47 L 0 0 Z" fill="none"/>
+		<g clip-path="url(#mask1)">
+			<g>
+				<path d="M 0 47 L 71 47 L 71 0 L 0 0 L 0 47 Z" fill="#ffffff"/>
+					<path d="M -4.7856 0 L 75.7856 0 L 75.7856 47 L -4.7856 47 L -4.7856 0 Z" fill="none"/>
+				<g clip-path="url(#mask2)">
+					<g>
+						<path d="M 35.5049 9.4058 C 43.2925 9.4058 49.5991 15.7168 49.5991 23.5 C 49.5991 31.2832 43.2925 37.6133 35.5049 37.6133 C 27.7168 37.6133 21.4009 31.2832 21.4009 23.5 C 21.4009 15.7168 27.7168 9.4058 35.5049 9.4058 L 35.5049 9.4058 Z" fill="#bb002c"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

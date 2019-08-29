@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.aqua {
+  color: #2f67a8;
+}
+.blue {
+  color: $color-font-blue;
+}
+.red {
+  color: $color-font-red;
+}
+.medium {
+  font-size: $font-size16;
+}
+.small {
+  font-size: $font-size12;
+}
+.large {
+  font-size: $font-size20;
+}
+.black {
+  // FIXME: not function
+  color: $color-font-main !important;
+}
+.disabled {
+  color: $color-link-disabled !important;
+}
+
+// TODO: 後で直す
+.sidebar {
+  color: #000 !important;
+  font-size: 2vw;
+  margin-bottom: 10px;
+  text-align: center;
+}

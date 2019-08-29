@@ -1,0 +1,312 @@
+{
+  "Home": {
+    "page": "ホーム",
+
+    "classification": "オーダー区分",
+    "product": "製品",
+    "remake": "作り直し",
+    "sample": "サンプル",
+    "orderSearch": "注文検索",
+    "fabricDelivery": "在庫検索",
+
+    "classic": "クラシックスーツ",
+    "modern": "モダンテーラード",
+    "formal": "フォーマル",
+    "shirt": "ドレスシャツ",
+    "women": "ウイメンズ",
+    "suit": "スーツ",
+    "jacket": "ジャケット",
+    "trousers": "トラウザーズ",
+    "vest": "ベスト",
+    "tuxedo": "タキシード",
+    "longSleve": "長袖",
+    "shortSleve": "半袖",
+    "pants": "パンツ",
+    "skirt": "スカート",
+    "onePiece": "ワンピース"
+  },
+  "Logo": {
+    "home": "ホーム"
+  },
+  "Header": {
+    "homeTitle": "ホーム",
+    "shopId": "店舗ID",
+    "staffCode": "担当コード"
+  },
+  "Footer": {
+    "save": "途中保存",
+    "confirm": "注文確認・決済画面へ",
+    "home": "ホームへ戻る",
+    "next": "次へ",
+    "prev": "前へ",
+    "orderContents": "注文内容",
+    "order": "オーダー",
+    "orderHandling": "オーダーへ",
+    "getSaveHalfWay": "中途保存"
+  },
+  "SAMPLE": {
+    "title": "Japanese title test"
+  },
+  "OrdersSearchPage": {
+    "page": "注文検索"
+  },
+  "Order": {
+    "page": "オーダー"
+  },
+
+  "Amount": {
+    "page": "オーダー"
+  },
+  "Settlement": {
+    "page": "オーダー"
+  },
+  "InventorySearch": {
+    "page": "在庫検索"
+  },
+  "SearchFilter": {
+    "title": "検索フィルター",
+    "category": "カテゴリー",
+    "phone": "電話番号",
+    "cardNo": "メンバーズカードナンバー",
+    "nameKana": "氏名(カナ)",
+    "nameKanji": "氏名(漢字)",
+    "paymentDate": "注文日付",
+    "searchButton": "検索する"
+  },
+  "DialogCustomerLoad": {
+    "title": "ログアウト確認",
+    "contentText": "ログアウトするアカウントにチェックを入れてください",
+    "cancelButtonLabel": "キャンセル",
+    "logoutButtonLabel": "ログアウト",
+    "customerCheckBoxLabel": "お客様アカウント ",
+    "staffCheckBoxLabel": "担当者アカウント "
+  },
+  "DialogRemarks": {
+    "title": "備考欄",
+    "closeButtonLabel": "閉じる"
+  },
+  "DialogInformation": {
+    "title": "情報",
+    "closeButtonLabel": "閉じる"
+  },
+  "DialogError": {
+    "title": "予期せぬエラーが発生しました",
+    "closeButtonLabel": "閉じる"
+  },
+  "LoginPage": {
+    "title": "LOGIN",
+    "description": "発注・決済・注文書発行サービスにログインします。",
+    "tempoCodeLabel": "店舗コード",
+    "staffCodeLabel": "担当者コード",
+    "staffPasswordLabel": "担当者パスワード",
+    "loginButtonLabel": "ログイン",
+    "loggingInMessage": "ログイン中。。。"
+  },
+  "MainPage": {
+    "pageTitle": "メインページ",
+    "dialogButtonLabel": "Dialogサンプル ページへ",
+    "orderSearchButtonLabel": "OrderSearch ページへ",
+    "order": "to オーダー"
+  },
+  "OrderDigestsReport": {
+    "title": "検索結果"
+  },
+  "Category": {
+    "cat1": "カテゴリー 1",
+    "cat2": "カテゴリー 2",
+    "cat3": "カテゴリー 3"
+  },
+  "Partition": {
+    "store": "店頭",
+    "warehouse": "倉庫",
+    "factory": "工場",
+    "order": "発注"
+  },
+  "Address": {
+    "page": "お届け先・日時"
+  },
+  "OrderDestination": {
+    "orderDestinationDialog": "店舗を指定",
+    "title": "お届け先",
+    "shippingPostalCode": "〒",
+    "zipCode": "〒",
+    "shippingState": "市区町村",
+    "shippingCity": "都道府県",
+    "shippingResidence": "番地・マンション名",
+    "name": "お名前（漢字）",
+    "save": "保存する",
+    "change": "変更する",
+    "contactInfo": "ご連絡先",
+    "phoneOne": "電話番号",
+    "phoneTwo": "電話番号2",
+    "email": "E-mail"
+  },
+  "OrderDelivery": {
+    "save": "保存する",
+    "change": "変更する",
+    "title": "お届け日時",
+    "dayTime": "日時",
+    "timeOfDay": "時刻なし（最短）",
+    "dispatchers": "無料のディスパッチャ",
+    "expressCompanyName": "佐川急便",
+    "deliveryFee": "配送料"
+  },
+  "PointUsage": {
+    "save": "保存する",
+    "change": "変更する",
+    "title": "ポイント用",
+    "points": "使用ポイント",
+    "currentPoints": "現在のポイント"
+  },
+  "ClothSelection": {
+    "page": "生地選択"
+  },
+  "OrderContentConfirmation": {
+    "page": "注文内容確認"
+  },
+  "SizeCorrection": {
+    "page": "サイズ補正",
+    "clothSelection": "生地選択",
+    "designSelection": "デザイン選択",
+    "sizeCorrection": "サイズ補正"
+  },
+  "ClothSelectionContent": {
+    "save": "保存する",
+    "change": "変更する",
+    "fabricCode": "生地コード",
+    "option": "オプション 生地コード",
+    "deliveryDate": "納期",
+    "brand": "ブランド",
+    "model": "モデル",
+
+    "soldOut": "現在、その生地は在庫切れです。",
+    "illustration": "イラスト"
+  },
+  "ClothSelectionComposition": {
+    "clothComposition": "生地組成（素材/ %)",
+    "partition": "着分区分",
+    "handle": "色通称",
+    "color": "柄通称"
+  },
+  "PointCampaign": {
+    "save": "保存する",
+    "change": "変更する",
+    "title": "キャンペーン、私はこのアプリが大好きです",
+    "campaignCoupon": "キャンペーンクーポンを使用する",
+    "PointsNotUsed": "未使用ポイント"
+  },
+  "NoteContent": {
+    "title": "配達日時 :",
+    "productTotal": "商品の合計 :",
+    "shippingFee": "配送料 :",
+    "paymentFee": "支払い手数料 :",
+    "usagePoints": "利用ポイント :",
+    "total": "合計 :"
+  },
+  "BalanceIntroducer": {
+    "introducer": "紹介者",
+    "none": "なし",
+    "introduction": "紹介",
+    "customerService": "接客",
+    "measurements": "採寸",
+    "referreCode": "紹介者コード"
+  },
+  "DistributionCategory": {
+    "distributionCategory": "流通区分",
+    "salesMeeting": "販売会",
+    "customerCode": "得意先コード"
+  },
+  "Balance": {
+    "balance": "支払い総額"
+  },
+  "OrderWithoutPayment": {
+    "orderWithoutPayment": "済せずにオーダーする"
+  },
+  "SideBarTemplate": {
+    "clothSelection": "生地選択",
+    "designSelection": "デザイン選択",
+    "sizeCorrection": "サイズ補正"
+  },
+  "OrderHandling": {
+    "destination": "届け先確認",
+    "amount": "金額確認",
+    "settlement": "決済"
+  },
+
+  "CheckOutStatus": {
+    "status": "ステータス"
+  },
+  "CashSelection": {
+    "cash": "現金の場合"
+  },
+  "CreditSelection": {
+    "credit": "クレジットカードの場合"
+  },
+  "NudeDimensions": {
+    "nudeDimensions": "ヌード寸法",
+    "update": "更新",
+    "measuringDate": "採寸日",
+    "totalLength": "総丈",
+    "upperBody": "上胴",
+    "bust": "バスト",
+    "mediumCopper": "中銅",
+    "waist": "ウエスト",
+    "circumference": "腰囲",
+    "buttocks": "尻囲",
+    "hips": "ヒップ",
+    "recommended": "推奨ゲージ",
+    "jacket": "ジャケット",
+    "trousers": "トラウザーズ",
+    "vest": "ベスト",
+    "-": "-"
+  },
+  "InventorySearchFilter": {
+    "selectOptions": "1つ以上選択してください",
+    "brand": "ブランド",
+    "byPeriod": "期別",
+    "itemNumber": "品番",
+    "inventoryStatus": "在庫状況",
+    "enoughStock": "在庫あり（◯）",
+    "littleStock": "品薄（△）",
+    "noStock": "品切れ（×）",
+    "search": "検索する",
+    "reset": "Reset"
+  },
+  "InventorySearchResults": {
+    "label": "検索結果"
+  },
+  "TotalPaymentDetails": {
+    "mainLabel": "支払い総額",
+    "order": "オーダー",
+    "basePrice": "本体価格：",
+    "optionPrice": "オプション価格：",
+    "productTotal": "商品合計：",
+    "totalPrice": "合計",
+    "deliveryDate": "納期"
+  },
+  "OrderListClothConfirmation": {
+    "cloth": "生地"
+  },
+  "designatedAddressDialog": {
+    "dialogTitle": "店舗を選択して下さい。",
+    "cancelBtn": "キャンセル",
+    "inputBtn": "入力"
+  },
+  "DateRangePicker": {
+    "from": "から"
+  },
+  "PrivacyPolicy": {
+    "page": "オーダー"
+  },
+  "CustomerLoginInfo": {
+    "customerName": "お名前",
+    "customerId": "ID",
+    "customerLoadButton": "読み込み"
+  },
+  "Selectbox": {
+    "defaultMessage": "選択する"
+  },
+  "DesignSelection": {
+    "page": "デザイン・オプション選択"
+  }
+}

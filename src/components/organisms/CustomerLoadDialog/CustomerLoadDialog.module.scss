@@ -1,0 +1,30 @@
+.customerLoadDialog {
+  .dialogContents {
+    .text {
+      display: none !important;
+
+      &.isLoading,
+      &.isError {
+        display: block !important;
+      }
+    }
+
+    .inputWrapper {
+      margin: 20px;
+    }
+
+    .input {
+      display: block !important;
+
+      &.isLoadingInput {
+        display: none !important;
+      }
+    }
+  }
+
+  .dialogActions {
+    button {
+      width: 80%;
+    }
+  }
+}

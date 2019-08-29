@@ -1,0 +1,15 @@
+// @types
+%text-area {
+  border: 2px solid gray;
+  background-color: lightblue;
+}
+
+#container {
+  .label {
+    width: 100%;
+  }
+  .value {
+    @extend %text-area;
+    width: 100%;
+  }
+}

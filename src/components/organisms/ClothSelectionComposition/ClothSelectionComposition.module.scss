@@ -1,0 +1,75 @@
+@import '../../../styles/variables';
+
+$inputMargin: 20px;
+$columnSize1: 315px;
+@mixin colmunInit {
+  margin-right: $inputMargin;
+}
+
+.clothSelectionComposition {
+  @include flexbox-grow;
+  padding: $contents-base-padding;
+  background: #f7f7f7;
+  .row {
+    @include flexbox;
+    @include flexbox-justify-start;
+    @include flexbox-align-start;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .label {
+      margin: 0 0 10px 0;
+    }
+    label {
+      display: block;
+    }
+    .columnSize1 {
+      @include colmunInit;
+      width: $columnSize1;
+    }
+    .columnSize2 {
+      width: 100%;
+    }
+    .inputWrap {
+      @include flexbox;
+      @include flexbox-justify-space-between;
+      @include flexbox-align-start;
+    }
+    .inputSet {
+      @include flexbox;
+      @include flexbox-justify-space-between;
+      @include flexbox-align-center;
+      width: calc(25% - 15px);
+    }
+    .inputItem1 {
+      width: calc(100% - 75px);
+    }
+    .inputItem2 {
+      width: 70px;
+    }
+  }
+}
+
+@include layout-portrait {
+  //縦もち時
+  .clothSelectionComposition {
+    .row {
+      .columnSize1 {
+        @include colmunInit;
+        width: $columnSize1;
+      }
+      .columnSize2 {
+        width: 100%;
+      }
+      .inputWrap {
+        @include flexbox-wrap;
+        margin-bottom: -20px;
+      }
+      .inputSet {
+        width: calc(50% - 15px);
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

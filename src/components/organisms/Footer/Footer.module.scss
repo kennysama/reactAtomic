@@ -1,0 +1,43 @@
+@import '../../../styles/variables';
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  @include flexbox;
+  @include flexbox-align-center;
+  width: 100%;
+  height: $footer-height;
+  background: $color-footer-bg;
+  box-shadow: $box-shadow;
+}
+.leftBlock {
+  @include flexbox-grow;
+  padding: 0 $contents-base-padding;
+}
+.rightBlock {
+  @include flexbox;
+  @include flexbox-align-center;
+  height: 100%;
+}
+
+.leftBtnWrapper {
+  @include flexbox;
+  @include flexbox-align-center;
+  .btnSet {
+    margin-right: $contents-base-padding;
+  }
+}
+.centerBtnWrapper {
+  @include flexbox;
+  @include flexbox-justify-end;
+  @include flexbox-align-center;
+  padding: 0 $contents-base-padding;
+  .btnSet {
+    margin-left: $contents-base-padding;
+  }
+}
+.rightBtnWrapper {
+  height: 100%;
+}

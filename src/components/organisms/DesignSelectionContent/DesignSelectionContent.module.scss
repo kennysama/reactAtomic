@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+// @types
+
+.content {
+  .title {
+    height: $design-selection-title-height;
+    color: $color-font-brown;
+    font-size: $font-size20;
+    font-weight: bold;
+  }
+  .selector {
+    height: calc(
+      100vh - #{$header-height} - #{$footer-height} - #{$stepper-height} - #{$design-selection-header-height} - #{$design-selection-title-height}
+    );
+    padding-bottom: $browser-toolbar-height;
+    overflow-y: scroll;
+  }
+}

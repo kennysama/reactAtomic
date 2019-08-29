@@ -1,0 +1,88 @@
+@import '../../../styles/variables';
+
+$inputMargin: 20px;
+$labelSize1: 90px;
+$labelSize2: 200px;
+$inputSize1: 170px;
+$btnSize: 200px;
+@mixin colmunInit {
+  @include flexbox;
+  @include flexbox-justify-start;
+  @include flexbox-align-center;
+  margin-right: $inputMargin;
+}
+
+.orderDigestsSearchFilter {
+  height: $order-digests-search-filter-height;
+  padding: $contents-base-padding;
+  .row {
+    @include flexbox;
+    @include flexbox-justify-start;
+    @include flexbox-align-center;
+    margin-bottom: $contents-base-padding;
+    label {
+      display: block;
+    }
+    .columnSize1 {
+      @include colmunInit;
+      label {
+        width: $labelSize1;
+      }
+      .inputWrap {
+        width: $inputSize1;
+      }
+    }
+    .columnSize2 {
+      @include flexbox-grow;
+      @include colmunInit;
+      margin-right: 0;
+      label {
+        width: $labelSize2;
+      }
+      .inputWrap {
+        width: calc(100% - #{$labelSize2});
+      }
+    }
+    .columnSize3 {
+      @include flexbox-grow;
+      @include colmunInit;
+      margin-right: 0;
+      label {
+        width: $labelSize1;
+      }
+      .inputWrap {
+        width: calc(100% - #{$labelSize1});
+      }
+    }
+  }
+  .rowBtn {
+    @include flexbox;
+    @include flexbox-justify-end;
+    @include flexbox-align-center;
+    .column {
+      width: $btnSize;
+    }
+  }
+}
+
+@include layout-portrait {
+  //縦もち時
+  .orderDigestsSearchFilter {
+    height: $order-digests-search-filter-height-portrait;
+    .row {
+      @include flexbox-wrap;
+      .columnSize2 {
+        margin-top: $contents-base-padding;
+        .inputWrap {
+          max-width: 250px;
+        }
+      }
+      .columnSize3 {
+        margin-top: $contents-base-padding;
+        .inputWrap {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}

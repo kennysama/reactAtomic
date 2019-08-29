@@ -1,0 +1,145 @@
+@import '../../../styles/variables';
+
+$labelSize1: 150px;
+$labelSize2: 100px;
+$inputItemBridgeWidth: 17px;
+$inputItemMailWidth: 25px;
+@mixin colmunInit {
+  @include flexbox;
+  @include flexbox-justify-start;
+  @include flexbox-align-center;
+}
+
+.orderDestination {
+  padding: $contents-base-padding;
+}
+.content {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  @include flexbox-align-start;
+}
+.left {
+  width: calc(60% - #{$contents-base-padding});
+}
+.right {
+  width: calc(40% - #{$contents-base-padding});
+}
+.subTitle {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  @include flexbox-align-center;
+  min-height: 55px;
+  padding: 6px 0;
+  border-bottom: 2px solid $color-border-light-gray;
+}
+
+.row {
+  @include flexbox;
+  @include flexbox-justify-start;
+  @include flexbox-align-center;
+  margin: 15px 0;
+  label {
+    display: block;
+    text-align: right;
+    padding-right: $contents-base-padding;
+  }
+  .columnSize1 {
+    @include colmunInit;
+    width: 100%;
+    label {
+      width: $labelSize1;
+    }
+    .inputWrap {
+      @include colmunInit;
+      width: calc(100% - #{$labelSize1});
+      height: 100%;
+    }
+  }
+  .columnSize2 {
+    @include colmunInit;
+    width: 50%;
+    label {
+      width: $labelSize1;
+    }
+    .inputWrap {
+      @include colmunInit;
+      width: calc(100% - #{$labelSize1});
+      height: 100%;
+    }
+  }
+  .columnSize3 {
+    @include colmunInit;
+    width: 50%;
+    label {
+      width: $labelSize2;
+      padding-left: 20px;
+    }
+    .inputWrap {
+      @include colmunInit;
+      width: calc(100% - #{$labelSize2});
+      height: 100%;
+    }
+  }
+  .columnSize4 {
+    @include colmunInit;
+    width: 100%;
+    label {
+      width: $labelSize2;
+    }
+    .inputWrap {
+      @include colmunInit;
+      width: calc(100% - #{$labelSize2});
+      height: 100%;
+    }
+  }
+  .inputItem1 {
+    width: 80px;
+  }
+  .inputItem2 {
+    width: 100px;
+  }
+  .inputItem3 {
+    width: 100%;
+  }
+  .inputItem4 {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+  }
+  .inputItem5 {
+    width: calc(50% - 10px);
+  }
+  .inputItem6 {
+    width: calc(50% - #{$inputItemMailWidth} / 2);
+  }
+  .inputItemBridge {
+    width: $inputItemBridgeWidth;
+    text-align: center;
+  }
+  .inputItemMail {
+    width: $inputItemMailWidth;
+    text-align: center;
+  }
+}
+
+@include layout-portrait {
+  //縦もち時
+  .content {
+    display: block;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .row {
+    .columnSize4 {
+      label {
+        width: $labelSize1;
+      }
+      .inputWrap {
+        width: calc(100% - #{$labelSize1});
+      }
+    }
+  }
+}

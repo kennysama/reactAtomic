@@ -1,0 +1,19 @@
+.errorDialog {
+  .dialogContents {
+    max-width: 700px;
+    min-width: 400px;
+
+    max-height: 400px;
+    min-height: 300px;
+  }
+
+  .dialogActions {
+    padding-top: 10px;
+  }
+}
+
+.errorPanel {
+  .title {
+    height: 20px;
+  }
+}

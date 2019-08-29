@@ -1,0 +1,369 @@
+{
+  "orders": [
+    {
+      "id": 12346785,
+      "nameKana": "オワダ　イチロウ",
+      "nameKanji": "小和田　一郎",
+      "category": "スーツ 1",
+      "cloth": "SDFFV2222",
+      "orderDate": "02/01/1990"
+    },
+    {
+      "id": 12346786,
+      "nameKana": "オワダ",
+      "nameKanji": "小和田",
+      "category": "スーツ 2",
+      "cloth": "SDFFV2244",
+      "orderDate": "02/07/1990"
+    },
+    {
+      "id": 12346787,
+      "nameKana": "オワダ　ロウ",
+      "nameKanji": "小和郎",
+      "category": "スーツ 3",
+      "cloth": "SDFFV2225",
+      "orderDate": "02/03/1990"
+    }
+  ],
+  "operator": [
+    {
+      "id": "login",
+      "certification_token": "1qaz2wsx3edc4rfv5tgb",
+      "manager_flag": 0
+    },
+    {
+      "id": "error",
+      "errors": [
+        {
+          "code": "1",
+          "message": "bad credentials"
+        }
+      ]
+    }
+  ],
+  "operator_error": {
+    "errors": [
+      {
+        "code": "1",
+        "message": "bad credentials"
+      }
+    ]
+  },
+  "orders-digests": [
+    {
+      "category_code": "1",
+      "customer_phone_number": "",
+      "memberscard_number": "",
+      "customer_name_kana": "Saute",
+      "customer_name_kanji": "",
+      "order_date_from": "",
+      "order_date_to": ""
+    },
+    {
+      "category_code": "1",
+      "customer_phone_number": "",
+      " memberscard_number": "32",
+      "customer_name_kana": "Sautexx",
+      "customer_name_kanji": "",
+      "order_date_from": ""
+    },
+    {
+      "category_code": "1",
+      "customer_phone_number": "444444",
+      "memberscard_number": "33",
+      "customer_name_kana": "Sauteyy",
+      "customer_name_kanji": "",
+      "order_date_from": ""
+    }
+  ],
+  "order-digests": [
+    {
+      "id": "194700302",
+      "name_kana": "Saute",
+      "name": "Sato Taro",
+      "category": "スーツ",
+      "textile": "SDFFV2222",
+      "order_date": "20190511",
+      "memo": "",
+      "order": "/orders/194700302",
+      "customer": "/customer/9900123456721"
+    },
+    {
+      "id": "194700303",
+      "name_kana": "Saute Taro",
+      "name": "Sato Taro",
+      "category": "スーツ",
+      "textile": "SDFFV2222",
+      "order_date": "20190511",
+      "memo": "",
+      "order": "/orders/194700302",
+      "customer": "/customer/9900123456721"
+    },
+    {
+      "id": "194700304",
+      "name_kana": "Saute Taro",
+      "name": "Sato Taro",
+      "category": "スーツ",
+      "textile": "SDFFV2222",
+      "order_date": "20190511",
+      "memo": "",
+      "order": "/orders/194700302",
+      "customer": "/customer/9900123456721"
+    },
+    {
+      "id": "guest",
+      "name_kana": "Saute Taro",
+      "name": "Sato Taro",
+      "category": "スーツ",
+      "textile": "SDFFV2222",
+      "order_date": "20190511",
+      "memo": "",
+      "order": "/orders/194700302",
+      "customer": "/customer/9900123456721"
+    }
+  ],
+  "brands": [
+    {
+      "brand_code": "ST"
+    },
+    {
+      "brand_code": "HG"
+    },
+    {
+      "brand_code": "KR"
+    },
+    {
+      "brand_code": "KA"
+    },
+    {
+      "brand_code": "RX"
+    },
+    {
+      "brand_code": "NX"
+    },
+    {
+      "brand_code": "RT"
+    },
+    {
+      "brand_code": "HR"
+    },
+    {
+      "brand_code": "CR"
+    },
+    {
+      "brand_code": "KV"
+    },
+    {
+      "brand_code": "TE"
+    },
+    {
+      "brand_code": "GA"
+    },
+    {
+      "brand_code": "UT"
+    },
+    {
+      "brand_code": "EE"
+    },
+    {
+      "brand_code": "EY"
+    }
+  ],
+  "brands-mock": [
+    {
+      "item_code": "89",
+      "category": "jackets"
+    }
+  ],
+  "models": [
+    {
+      "season_code": "KM",
+      "model_pattern": "ST",
+      "model_code": "012"
+    },
+    {
+      "season_code": "KMS",
+      "model_pattern": "sss",
+      "model_code": "013"
+    }
+  ],
+  "models-mock": [
+    {
+      "item_code": "89",
+      "brand_code": "ST",
+      "language_code": "jp"
+    }
+  ],
+  "customer": {
+    "isValid": true,
+    "memberscard_number": 9900131303722,
+    "customer_code": "OW16718228",
+    "customer_sex": 1,
+    "customer_birthday": "19800101",
+    "customer_family_name": "佐藤",
+    "customer_given_name": "太郎",
+    "customer_family_name_kana": "サトウ",
+    "customer_given_name_kana": "タロウ",
+    "pc_mail_address": "yyyy@xx.zz.ne.jp",
+    "customer_phone_number": "0112223333",
+    "customer_cellularphone_number": "09088887777",
+    "customer_postal_code": "0630804",
+    "customer_state": "北海道",
+    "customer_city": "Twenty-four in the West District of Sapporo City",
+    "customer_street": "Nine nine-chome 100-1",
+    "customer_residence": "Wonderful apartment # 401",
+    "size": {
+      "height": 170,
+      "weight": 60
+    }
+  },
+  "fabric-details": {
+    "color_name": "ブラック",
+    "season_code": "KM",
+    "season_name": "SPRING&SUMMER",
+    "personalorder_product_number": "0051",
+    "personalorder_color_code": "005",
+    "personalorder_color_name": "ブラック",
+    "retail_price": "35000",
+    "retail_price_taxin": "37800",
+    "option_pattern": "ST",
+    "design": "003",
+    "design_name": "縞（大）",
+    "cloth_name": "1704/CANONICO/BLACK PLAIN",
+    "cloth_season": "KM",
+    "cloth_code": "1704",
+    "vendor_cloth_number": "3-286-847-3",
+    "images": [
+      {
+        "image_path": "../xx/yyy/zzzz.png"
+      }
+    ],
+    "isnew": "1",
+    "issoldout": "0",
+    "maker_name2": "901",
+    "function_name": " "
+  },
+
+  "products": [
+    {
+      "brand_code": "ST",
+      "item_code": "SR",
+      "product_season_code": "KM",
+      "personalorder_product_number": "0051",
+      "personalorder_color_code": "005",
+      "season_code": "KM",
+      "season_name": "SPRING&SUMMER",
+      "personalorder_color_name": "ブラック",
+      "retail_price": "35000",
+      "retail_price_taxin": "37800",
+      "model_patterns": [
+        {
+          "parts_number": "01",
+          "model_patterns": [
+            {
+              "model_pattern": "ST"
+            }
+          ]
+        }
+      ],
+      "design": "003",
+      "design_name": "縞（大）",
+      "cloth_name": "1704/CANONICO/BLACK PLAIN",
+      "cloth_season": "KM",
+      "cloth_code": "1704",
+      "vendor_cloth_number": "3-286-847-3",
+      "mixings": [
+        {
+          "mixing": "005",
+          "mixing_ratio": "65"
+        }
+      ],
+      "isnew": "1",
+      "issoldout": "0",
+      "maker_name2": "901",
+      "function_name": " "
+    },
+    {
+      "brand_code": "isSoldOut",
+      "item_code": "SR",
+      "product_season_code": "KM",
+      "personalorder_product_number": "0051",
+      "personalorder_color_code": "005",
+      "season_code": "KM",
+      "season_name": "SPRING&SUMMER",
+      "personalorder_color_name": "ブラック",
+      "retail_price": "35000",
+      "retail_price_taxin": "37800",
+      "model_patterns": [
+        {
+          "parts_number": "01",
+          "model_patterns": [
+            {
+              "model_pattern": "ST"
+            },
+            {
+              "model_pattern": "PT"
+            }
+          ]
+        }
+      ],
+      "design": "003",
+      "design_name": "縞（大）",
+      "cloth_name": "1704/CANONICO/BLACK PLAIN",
+      "cloth_season": "KM",
+      "cloth_code": "1704",
+      "vendor_cloth_number": "3-286-847-3",
+      "mixings": [
+        {
+          "mixing": "005",
+          "mixing_ratio": "65"
+        }
+      ],
+      "isnew": "1",
+      "issoldout": "1",
+      "maker_name2": "901",
+      "function_name": " "
+    },
+    {
+      "brand_code": "vendor cloth number empty",
+      "item_code": "SR",
+      "product_season_code": "KM",
+      "personalorder_product_number": "0051",
+      "personalorder_color_code": "",
+      "season_code": "KM",
+      "season_name": "SPRING&SUMMER",
+      "personalorder_color_name": "",
+      "retail_price": "35000",
+      "retail_price_taxin": "37800",
+      "model_patterns": [
+        {
+          "parts_number": "01",
+          "model_patterns": [
+            {
+              "model_pattern": "ST"
+            },
+            {
+              "model_pattern": "PT"
+            }
+          ]
+        }
+      ],
+      "design": "003",
+      "design_name": "縞（大）",
+      "cloth_name": "1704/CANONICO/BLACK PLAIN",
+      "cloth_season": "KM",
+      "cloth_code": "1704",
+      "vendor_cloth_number": "",
+      "mixings": [
+        {
+          "mixing": "005",
+          "mixing_ratio": "65"
+        }
+      ],
+      "isnew": "1",
+      "issoldout": "0",
+      "maker_name2": "901",
+      "function_name": " "
+    }
+  ]
+}

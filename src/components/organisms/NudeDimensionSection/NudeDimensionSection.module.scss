@@ -1,0 +1,48 @@
+@import '../../../styles/variables';
+
+// @types
+$width-3: 100% / 3;
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  position: sticky;
+  position: -webkit-sticky; /* for safari */
+  top: calc(#{$header-height} + #{$stepper-height});
+  .title {
+    height: $size-correction-tab-height;
+    padding-top: 15px;
+  }
+  .gauge {
+    .label {
+      width: 100%;
+    }
+    .list {
+      width: 100%;
+      @extend %flex;
+      .col {
+        width: $width-3;
+      }
+    }
+  }
+  .measure {
+    @extend %flex;
+    .left {
+      width: 50%;
+    }
+    .right {
+      width: 50%;
+    }
+  }
+}
+
+@include layout-portrait {
+  //縦もち時
+  #container {
+    top: calc(#{$header-height} * 2 + #{$stepper-height});
+  }
+}

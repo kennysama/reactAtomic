@@ -1,0 +1,25 @@
+.inputWrapper {
+  display: flex;
+  align-items: center;
+
+  
+}
+.input {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+
+  > button {
+    margin: 5px;
+    border: solid 1px #707070;
+    border-radius: 0%;
+    background-color: #ffffff;
+    color: #721414;
+  }
+}
+
+.input + .button {
+  margin: 5px;
+}

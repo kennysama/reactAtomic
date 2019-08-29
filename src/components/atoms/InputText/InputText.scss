@@ -1,0 +1,32 @@
+@import '../../../styles/variables';
+
+.input-text {
+  margin-bottom: 18px;
+  @include flexbox;
+  @include flexbox-justify-start;
+  @include flexbox-align-center;
+  label {
+    display: block;
+  }
+  input[type='text'] {
+    margin-left: 18px;
+  }
+  &__top {
+    br + input[type='text'] {
+      margin-top: 12px;
+      margin-bottom: 18px;
+    }
+  }
+}
+.input-text__log {
+  &--readonly {
+    background-color: $color-bg-readonly !important;
+    border: 1px solid $color-bg-readonly !important;
+    color: $color-font-sub !important;
+    cursor: default !important;
+  }
+  &--readonly-white {
+    background-color: $color-bg-white !important;
+    border: 1px solid $color-border !important;
+  }
+}

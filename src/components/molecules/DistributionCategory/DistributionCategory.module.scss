@@ -1,0 +1,23 @@
+.distributionCategory {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(255, 255, 255);
+  border: 0.7px solid rgb(185, 180, 180);
+  padding: 2%;
+  width: 100%;
+
+  padding-bottom: 2%;
+  margin-bottom: 1rem;
+
+  .left {
+    flex-flow: column;
+    flex: 1;
+    text-align: left;
+    justify-content: space-around;
+    margin-left: 1%;
+
+    .label {
+      margin-bottom: 1.7%;
+    }
+  }
+}

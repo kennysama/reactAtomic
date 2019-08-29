@@ -1,0 +1,54 @@
+@import '../../../styles/variables';
+
+/* UIカスタマイズ */
+.selectBox {
+  display: block !important;
+  font-family: $set-sans-serif !important;
+  color: $color-font-main !important;
+  line-height: 1 !important;
+  div div {
+    min-height: 37px;
+    padding: 5px 32px 5px 12px;
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    border-radius: $botton-radius;
+    box-shadow: $box-shadow-inset;
+    line-height: 1.7;
+    font-size: $font-size16;
+    box-sizing: border-box;
+    color: $color-font-main;
+    &::-webkit-input-placeholder {
+      color: $color-font-placeholder;
+    }
+    &:disabled {
+      background-color: $color-bg-disabled;
+      border: 1px solid $color-bg-disabled;
+      color: $color-font-sub;
+    }
+    &:focus {
+      padding: 2px 29px 2px 9px;
+      background-color: $color-white;
+      border: 4px solid $color-border-focus;
+      border-radius: $botton-radius;
+    }
+    &::placeholder {
+      color: $color-font-placeholder;
+    }
+    &:-moz-placeholder {
+      color: $color-font-placeholder;
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+    &:focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+    &:focus:-moz-placeholder {
+      color: transparent;
+    }
+  }
+  svg {
+    right: 5px;
+    fill: $color-font-main;
+  }
+}

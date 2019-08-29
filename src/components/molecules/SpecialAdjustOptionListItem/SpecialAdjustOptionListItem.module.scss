@@ -1,0 +1,64 @@
+// @types
+// 仮
+$width-3: 100% / 3;
+$width-left-block: 30%;
+$width-harf: 50%;
+$width-center-block: 15%;
+$width-right-block: 65%;
+$width-numeric-input: 80%;
+$width-diff: 20%;
+
+%text-area {
+  border: 2px solid gray;
+  background-color: lightblue;
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+#container {
+  width: 100%;
+  .row {
+    @extend %flex;
+    .left {
+      @extend %flex;
+      width: $width-left-block;
+      .none {
+        @extend .visibility-hidden;
+        width: 50%;
+      }
+      .value {
+        text-align: left;
+        width: 50%;
+      }
+    }
+    .center {
+      width: $width-center-block;
+      .none {
+        @extend .visibility-hidden;
+      }
+    }
+    .right {
+      width: $width-right-block;
+      .item {
+        @extend %flex;
+        width: $width-numeric-input;
+        .label {
+          width: 50%;
+        }
+        .value {
+          text-align: left;
+          width: 50%;
+        }
+      }
+    }
+  }
+}

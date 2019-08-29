@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+.flagSelector {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  .button {
+    display: block;
+    margin-left: 20px;
+    .text {
+      display: block;
+      width: 71px;
+      height: 47px;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      user-select: none;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+    .input {
+      display: none;
+      &:checked ~ .flagSelectorButtonText {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+.stepper-bar-template {
+  &__header {
+    position: fixed;
+    left: 0;
+    top: $header-height;
+    z-index: 99;
+    width: 100%;
+    height: $stepper-height;
+    &--order-handling {
+      background-color: #f8d594;
+    }
+    &--order-content {
+      background-color: $color-main-bg;
+    }
+  }
+  &__body {
+    padding-top: $stepper-height;
+  }
+}

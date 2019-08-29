@@ -1,0 +1,35 @@
+@import '../../../styles/variables';
+
+.spinner {
+  display: none;
+}
+
+.isLoading {
+  @include flexbox;
+  @include flexbox-justify-center;
+  @include flexbox-align-center;
+  img {
+    display: block;
+    width: 80px;
+    height: auto;
+    @each $prefix in $set-prefix {
+      #{$prefix}animation: spin 2s linear infinite;
+    }
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

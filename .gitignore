@@ -1,0 +1,5 @@
+node_modules
+build
+_MyComponentName
+.envrc
+.DS_Store

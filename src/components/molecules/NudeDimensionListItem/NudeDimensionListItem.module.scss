@@ -1,0 +1,20 @@
+// @types
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  .row {
+    width: 100%;
+    @extend %flex;
+    .label {
+      width: 50%;
+    }
+    .value {
+      width: 50%;
+    }
+  }
+}

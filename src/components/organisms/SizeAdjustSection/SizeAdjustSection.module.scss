@@ -1,0 +1,23 @@
+// @types
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  .top {
+    width: 100%;
+    @extend %flex;
+    .tab {
+      width: 80%;
+    }
+    .button {
+      width: 20%;
+    }
+  }
+  .container {
+    width: 100%;
+  }
+}

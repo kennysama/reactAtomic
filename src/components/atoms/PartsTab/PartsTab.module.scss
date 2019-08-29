@@ -1,0 +1,15 @@
+// @types
+#container {
+  width: 100%;
+  display: flex;
+  .tab {
+    max-width: 150px;
+    border: 2px gray solid;
+    .label {
+      font-weight: bold;
+    }
+  }
+  .tabActive {
+    background-color: red;
+  }
+}

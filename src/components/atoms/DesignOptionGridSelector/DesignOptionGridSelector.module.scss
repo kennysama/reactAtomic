@@ -1,0 +1,56 @@
+@import '../../../styles/variables';
+
+// @types
+
+.content {
+  position: relative;
+  z-index: 10;
+  @include flexbox;
+  @include flexbox-wrap;
+  @include flexbox-justify-start;
+  .item {
+    width: calc((100% - 16px * 3) / 4);
+    margin: 0 16px 16px 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .card {
+    height: 100%;
+    background: $color-bg-white;
+    border: 6px solid $color-bg-white;
+    border-radius: $box-radius;
+    box-shadow: $box-shadow-s;
+    .image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .text {
+      padding: 2px 4px;
+      font-size: $font-size16;
+      line-height: 1.5;
+      color: $color-font-sub;
+    }
+  }
+
+  .cardSelected {
+    @extend .card;
+    border: 6px solid $color-border-bright-focus;
+  }
+}
+
+@include layout-portrait {
+  //縦もち時
+  .content {
+    .item {
+      width: calc((100% - 16px * 1) / 2);
+      margin: 0 16px 16px 0;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import '../../../styles/variables';
+
+.header {
+  height: $order-digests-search-header-height;
+  padding: 25px $contents-base-padding 0 $contents-base-padding;
+  background: $color-bg-white;
+  .title {
+    font-size: $font-size16;
+    span {
+      font-size: $font-size24;
+    }
+  }
+}
+
+$colSize1: 110px;
+$colSize2: 110px;
+$colSize3: 110px;
+$colSize4: 110px;
+$colSize5: 110px;
+$colSize6: 110px;
+$colSize7: 80px;
+// $colSize8: 100%から引く
+$colSize9: 120px;
+
+@mixin colInit {
+  padding: 10px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.content {
+  height: calc(
+    100vh - #{$header-height} - #{$footer-height} - #{$order-digests-search-filter-height} - #{$order-digests-search-header-height}
+  );
+  padding-bottom: $browser-toolbar-height;
+  overflow-y: auto;
+  .col1 {
+    @include colInit;
+    width: $colSize1;
+  }
+  .col2 {
+    @include colInit;
+    width: $colSize2;
+  }
+  .col3 {
+    @include colInit;
+    width: $colSize3;
+  }
+  .col4 {
+    @include colInit;
+    width: $colSize4;
+  }
+  .col5 {
+    @include colInit;
+    width: $colSize5;
+  }
+  .col6 {
+    @include colInit;
+    width: $colSize6;
+    text-align: center;
+  }
+  .col7 {
+    @include colInit;
+    width: $colSize7;
+  }
+  .col8 {
+    @include colInit;
+    width: calc(
+      100% - #{$colSize1} - #{$colSize2} - #{$colSize3} - #{$colSize4} - #{$colSize5} - #{$colSize6} - #{$colSize7} - #{$colSize9}
+    );
+  }
+  .col9 {
+    @include colInit;
+    width: $colSize9;
+  }
+  .row {
+    @include flexbox;
+    @include flexbox-justify-start;
+    @include flexbox-align-center;
+  }
+  .thead {
+    position: sticky;
+    position: -webkit-sticky; /* for safari */
+    top: 0;
+    background: $color-bg-thead;
+    color: $color-font-white;
+    text-align: center;
+  }
+  .tbody {
+    .row {
+      background: $color-bg-white;
+      &:nth-child(2n) {
+        background: $color-bg-stripe-table;
+      }
+    }
+    p + p {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include layout-portrait {
+  //縦もち時
+  .content {
+    height: calc(
+      100vh - #{$header-height} * 2 - #{$footer-height} - #{$order-digests-search-filter-height-portrait} - #{$order-digests-search-header-height}
+    );
+    overflow-x: auto;
+    .thead,
+    .tbody {
+      width: $base-window-size;
+    }
+  }
+}

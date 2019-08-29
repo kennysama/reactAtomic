@@ -1,0 +1,283 @@
+/* 色指定 */
+$color-black: #000;
+$color-white: #fff;
+/* 茶色 */
+$color-dark-brown: #6b5841;
+$color-brown: #997e5d;
+$color-bright-brown: #c8b9a7;
+$color-light-brown: #c7b9a7;
+$color-pale-brown: #f6f3f0;
+/* グレー */
+$color-light-gray: #d6d6d6;
+$color-pale-gray: #efefef;
+/* 赤 */
+$color-red: #ac1f07;
+$color-dull-red: #ae483a;
+$color-light-red: #dba9a6;
+$color-pale-red: #fbd5d1;
+/* 青 */
+$color-blue: #00649b;
+
+/* 色指定　使用場所 */
+/* 背景 */
+$color-header-bg: $color-black;
+$color-footer-bg: $color-brown;
+$color-main-bg: $color-pale-gray;
+$color-bg-black: $color-black;
+$color-bg-white: $color-white;
+$color-bg-light-gray: $color-light-gray;
+$color-bg-dark-brown: $color-dark-brown;
+$color-bg-brown: $color-brown;
+$color-bg-pale-brown: $color-pale-brown;
+$color-bg-red: $color-red;
+$color-bg-pale-red: $color-pale-red;
+$color-bg-stripe-table: #f5f5f5;
+$color-bg-thead: #aaa;
+$color-filter: rgba(0, 0, 0, 0.7);
+$color-bg-disabled: $color-light-gray;
+$color-bg-readonly: $color-light-gray;
+/* フォント */
+$color-font-main: $color-black;
+$color-font-sub: #666;
+$color-font-white: $color-white;
+$color-font-brown: $color-brown;
+$color-font-bright-brown: $color-bright-brown;
+$color-font-light-brown: $color-light-brown;
+$color-font-gray: #444;
+$color-font-light-gray: #c5c5c5;
+$color-font-red: $color-red;
+$color-font-dull-red: $color-dull-red;
+$color-font-blue: $color-blue;
+$color-font-placeholder: #c5c5c5;
+/* 見出し */
+$color-headline-bg: $color-bright-brown;
+$color-headline-line: $color-light-brown;
+/* 線 */
+$color-border: #ddd;
+$color-border-gray: #909090;
+$color-border-light-gray: #c6c6c6;
+$color-border-dark-gray: #333;
+$color-border-light-red: $color-light-red;
+$color-border-focus: $color-brown;
+$color-border-bright-focus: $color-bright-brown;
+/* リンク */
+$color-link: $color-brown;
+$color-link-disabled: $color-light-gray;
+
+/* ベンダープレフィックスのリスト */
+$set-prefix: -webkit-, '';
+
+/* フォントファミリー：ゴシック */
+$set-sans-serif: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+
+/* 縦もち横もちブレークポイント */
+$breakpoint: 768px;
+
+/* 基本画面サイズ */
+$base-window-size: 1024px;
+
+/* コンテンツ左右のpadding */
+$contents-base-padding: 20px;
+
+/* ヘッダー高さ */
+$header-height: 60px;
+/* フッター高さ */
+$footer-height: 60px;
+/* ブラウザのバー等の高さ分の余裕 */
+$browser-toolbar-height: 80px;
+/* stepperBar高さ */
+$stepper-height: 70px;
+
+/* デザイン選択画面 */
+$design-selection-header-height: 90px;
+$design-selection-title-height: 33px;
+
+/* サイズ補正画面 */
+$size-correction-tab-height: 60px;
+
+/* 注文検索画面 */
+$order-digests-search-filter-height: 205px;
+$order-digests-search-filter-height-portrait: 320px;
+$order-digests-search-header-height: 70px;
+
+/* 在庫検索画面 */
+$inventory-search-filter-height: 145px;
+$inventory-search-filter-height-portrait: 145px;
+$inventory-search-header-height: 70px;
+
+/* 角丸の基本 */
+/* ボックス用 */
+$box-radius: 3px;
+/* ボタン・input用 */
+$botton-radius: 3px;
+
+/* シャドウの基本 */
+/* ボックスの外側 */
+$box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.14);
+/* ボックスの外側　小 */
+$box-shadow-s: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+/* ボックスの内側*/
+$box-shadow-inset: 0px 1px 2px 0px rgba(0, 0, 0, 0.07) inset;
+
+/* disabled */
+$disabled-opacity: 0.7;
+
+/* font-size 1rem= 14px換算 */
+$font-size26: 1.85rem;
+$font-size24: 1.75rem;
+$font-size22: 1.6rem;
+$font-size20: 1.45rem;
+$font-size18: 1.3rem;
+$font-size17: 1.22rem;
+$font-size16: 1.15rem;
+$font-size14: 1rem;
+$font-size12: 0.85rem;
+$font-size10: 10px;
+
+/* 縦もちレイアウト */
+@mixin layout-portrait($width: $breakpoint) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+/* clearfix */
+@mixin clearfix {
+  zoom: 1;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/* 天地中央配置 */
+@mixin vertical-middle {
+  display: block;
+  position: relative;
+  top: 50%;
+  @each $prefix in $set-prefix {
+    #{$prefix}transform: translateY(-50%);
+  }
+}
+
+/* flex */
+/* flex */
+@mixin flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* flex inline */
+@mixin inline-flexbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+/* flex 左から（デフォルト） */
+@mixin flexbox-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+/* flex 右から */
+@mixin flexbox-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+/* flex 縦 */
+@mixin flexbox-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* flex 折り返しなし（デフォルト） */
+@mixin flexbox-nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+/* flex 折り返しあり */
+@mixin flexbox-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* flex 左寄せ（デフォルト） */
+@mixin flexbox-justify-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+/* flex 右寄せ */
+@mixin flexbox-justify-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+/* flex センタリング */
+@mixin flexbox-justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* flex space-between（左右は端合わせで等間隔） */
+@mixin flexbox-justify-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* flex space-around（全て等間隔） */
+@mixin flexbox-justify-space-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+/* flex 100%に引き伸ばす（デフォルト） */
+@mixin flexbox-align-stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+/* flex 上寄せ */
+@mixin flexbox-align-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+/* flex 下寄せ */
+@mixin flexbox-align-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+/* flex 天地中央寄せ */
+@mixin flexbox-align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* flex 子要素の */
+@mixin flexbox-grow($grow: 1) {
+  -webkit-box-flex: $grow;
+  -ms-flex-positive: $grow;
+  flex-grow: $grow;
+}
+
+// TODO: 後で消す
+$main-color: #eee0cb;
+$main-black: #000;
+$main-red: #f1522c;
+$active-color: #4a47a8;
+$page-wrapper-color: #f0f0f7;
+
+// background
+$backgroundBrown-color: #e3d7c6;
+
+// button
+$button-default-color: #373737;
+$button-primary-color: #ff0000;
+
+//footer
+$footer-background-color: #eee0cb;

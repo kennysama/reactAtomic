@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.clothSelectionPage {
+  @include flexbox;
+  @include flexbox-column;
+  @include flexbox-justify-space-between;
+  min-height: calc(100vh - #{$header-height} - #{$footer-height} - #{$stepper-height});
+}
+
+@include layout-portrait {
+  //縦もち時
+  .clothSelectionPage {
+    min-height: calc(100vh - #{$header-height} * 2 - #{$footer-height} - #{$stepper-height});
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../../styles/variables';
+
+// @types
+.list {
+  padding: 10px $contents-base-padding;
+  .item {
+    margin-bottom: 10px;
+  }
+}

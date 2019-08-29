@@ -1,0 +1,66 @@
+@import '../../../styles/variables';
+
+$inputMargin: 20px;
+$columnSize1: 315px;
+$columnSize1Portrate: 250px;
+@mixin colmunInit {
+  margin-right: $inputMargin;
+}
+
+.clothSelectionContent {
+  padding: $contents-base-padding;
+  .row {
+    @include flexbox;
+    @include flexbox-justify-start;
+    @include flexbox-align-start;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .label {
+      margin: 0 0 10px 0;
+    }
+    label {
+      display: block;
+    }
+    .columnSize1 {
+      @include colmunInit;
+      width: $columnSize1;
+    }
+    .columnSize2 {
+      @include colmunInit;
+      width: calc(#{$columnSize1} / 2 - 10px);
+    }
+    .inputWrap {
+      @include flexbox;
+      @include flexbox-justify-start;
+      @include flexbox-align-start;
+    }
+    .inputItem1 {
+      margin-right: 20px;
+    }
+    .inputItem2 {
+      @include flexbox-grow;
+    }
+    .textItem {
+      padding: 7px 14px;
+      line-height: 1.7;
+      font-size: $font-size16;
+    }
+  }
+}
+
+@include layout-portrait {
+  //縦もち時
+  .clothSelectionContent {
+    .row {
+      .columnSize1 {
+        width: $columnSize1Portrate;
+      }
+      .columnSize2 {
+        @include colmunInit;
+        width: calc(#{$columnSize1} / 2 - 10px);
+      }
+    }
+  }
+}

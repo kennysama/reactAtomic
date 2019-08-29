@@ -1,0 +1,297 @@
+{
+  "Home": {
+    "page": "家",
+
+    "classification": "订单分类",
+    "product": "制品",
+    "remake": "翻拍",
+    "sample": "样本",
+    "orderSearch": "订单搜索",
+    "fabricDelivery": "库存搜索",
+
+    "classic": "经典西装",
+    "modern": "现代剪裁",
+    "formal": "正式",
+    "shirt": "礼服衬衫",
+    "women": "女子",
+    "suit": "诉讼",
+    "jacket": "夹克",
+    "trousers": "裤子",
+    "vest": "最好",
+    "tuxedo": "燕尾服",
+    "longSleve": "长袖",
+    "shortSleve": "短袖",
+    "pants": "裤子",
+    "skirt": "裙子",
+    "onePiece": "一件"
+  },
+  "Logo": {
+    "home": "家"
+  },
+  "Header": {
+    "homeTitle": "家",
+    "shopId": "Shop ID",
+    "staffCode": "Staff Code",
+    "customerName": "Name",
+    "customerId": "ID",
+    "customerLoadButton": "载入中"
+  },
+  "Footer": {
+    "save": "节省开支",
+    "confirm": "订购确认・结算屏幕",
+    "home": "回到家",
+    "next": "旁边",
+    "prev": "前",
+    "orderContents": "订单内容",
+    "order": "顺序",
+    "orderHandling": "订购"
+  },
+  "SAMPLE": {
+    "title": "English title test"
+  },
+  "OrdersSearchPage": {
+    "page": "注文検索"
+  },
+  "Order": {
+    "page": "订购"
+  },
+  "Amount": {
+    "page": "订购"
+  },
+  "Settlement": {
+    "page": "订购"
+  },
+  "InventorySearch": {
+    "page": "库存搜索"
+  },
+  "SearchFilter": {
+    "title": "搜索过滤器",
+    "category": "类别",
+    "phone": "电话号码",
+    "cardNo": "会员卡号",
+    "nameKana": "名称（假名）",
+    "nameKanji": "氏名（汉字）",
+    "paymentDate": "注文日付",
+    "searchButton": "取回"
+  },
+  "DialogCustomerLoad": {
+    "title": "退出确认 ",
+    "contentText": "请检查帐户以注销",
+    "cancelButtonLabel": "取消",
+    "logoutButtonLabel": "注销",
+    "customerCheckBoxLabel": "客户帐户",
+    "staffCheckBoxLabel": "联系人帐户 "
+  },
+  "DialogRemarks": {
+    "title": "备注栏目",
+    "closeButtonLabel": "关闭"
+  },
+  "DialogInformation": {
+    "title": "信息来源",
+    "closeButtonLabel": "关闭"
+  },
+  "DialogError": {
+    "title": "错误",
+    "closeButtonLabel": "关闭"
+  },
+  "LoginPage": {
+    "title": "注册",
+    "description": "登录订单，结算和订单发布服务。",
+    "tempoCodeLabel": "商店 代码",
+    "staffCodeLabel": "负责人 代码",
+    "staffPasswordLabel": "负责人 密码",
+    "loginButtonLabel": "注册",
+    "loggingInMessage": "立即登录。。。"
+  },
+  "MainPage": {
+    "pageTitle": "主页",
+    "dialogButtonLabel": "到Dialog示例页面",
+    "orderSearchButtonLabel": "转到OrderSearch页面",
+    "order": "to 订购"
+  },
+  "OrderDigestsReport": {
+    "title": "検索結果"
+  },
+  "Category": {
+    "cat1": "类别 1",
+    "cat2": "类别 2",
+    "cat3": "类别 3"
+  },
+  "Partition": {
+    "store": "商店",
+    "warehouse": "仓库",
+    "factory": "工厂",
+    "order": "订单"
+  },
+  "OrderDestination": {
+    "orderDestinationDialog": "指定商店",
+    "shippingPostalCode": "〒",
+    "zipCode": "〒",
+    "shippingState": "市区",
+    "shippingCity": "状态",
+    "shippingResidence": "街道/公寓名称",
+    "name": "你的名字",
+    "save": "保存",
+    "change": "更改",
+    "title": "送货目的地",
+    "contactInfo": "联系信息",
+    "phoneOne": "电话号码1",
+    "phoneTwo": "电话号码2",
+    "email": "Email"
+  },
+  "OrderDelivery": {
+    "save": "保存",
+    "change": "更改",
+    "title": "交货日期和时间",
+    "dayTime": "日和时间",
+    "timeOfDay": "没有时间（最短）",
+    "dispatchers": "调度员免费",
+    "expressCompanyName": "佐川急便",
+    "deliveryFee": "快递费"
+  },
+  "PointUsage": {
+    "save": "保存",
+    "change": "更改",
+    "title": "用于点",
+    "points": "使用要点",
+    "currentPoints": "目前的要点"
+  },
+  "ClothSelection": {
+    "page": "面团选择"
+  },
+  "SizeCorrection": {
+    "page": "尺寸修正",
+    "clothSelection": "面团选择",
+    "designSelection": "设计选择",
+    "sizeCorrection": "尺寸修正"
+  },
+  "ClothSelectionContent": {
+    "save": "保存",
+    "change": "更改",
+    "fabricCode": "面料代码",
+    "option": "选项结构代码",
+    "deliveryDate": "交货时间",
+    "brand": "牌",
+    "model": "模型",
+    "clothComposition": "面团成分(材质/％）",
+    "partition": "着分区分",
+    "soldOut":"面团目前缺货"
+  },
+
+  "PointCampaign": {
+    "save": "保存",
+    "change": "更改",
+    "title": "该活动，我喜欢这个应用程序",
+    "campaignCoupon": "使用活动优惠券",
+    "PointsNotUsed": "未使用的积分"
+  },
+  "NoteContent": {
+    "title": "交货日期和时间 :",
+    "productTotal": "产品总数 :",
+    "shippingFee": "运输费用 :",
+    "paymentFee": "付款费用 :",
+    "usagePoints": "使用要点 :",
+    "total": "总 :"
+  },
+  "BalanceIntroducer": {
+    "introducer": "介绍人",
+    "none": "无",
+    "introduction": "介绍",
+    "customerService": "客户服务",
+    "measurements": "测量",
+    "referreCode": "推荐人代码"
+  },
+  "DistributionCategory": {
+    "distributionCategory": "分销类别",
+    "salesMeeting": "销售会议",
+    "customerCode": "客户代码"
+  },
+  "Balance": {
+    "balance": "付款总额"
+  },
+  "OrderWithoutPayment": {
+    "orderWithoutPayment": "订单无需付款"
+  },
+  "SideBarTemplate": {
+    "clothSelection": "面团选择",
+    "designSelection": "设计选择",
+    "sizeCorrection": "尺寸修正"
+  },
+  "CheckOutStatus": {
+    "status": "状态"
+  },
+  "CashSelection": {
+    "cash": "在现金的情况下"
+  },
+  "CreditSelection": {
+    "credit": "在信用卡的情况下"
+  },
+  "NudeDimensions": {
+    "nudeDimensions": "裸体尺寸",
+    "update": "更新",
+    "measuringDate": "测量一天",
+    "totalLength": "总长度",
+    "upperBody": "上半身",
+    "bust": "胸围",
+    "mediumCopper": "中銅",
+    "waist": "西方",
+    "circumference": "腰围",
+    "buttocks": "屁股圆周",
+    "hips": "髋关节",
+    "recommended": "推荐规格",
+    "jacket": "夹克",
+    "trousers": "裤子",
+    "vest": "最好",
+    "-": "-"
+  },
+  "OrderHandling": {
+    "destination": "目的地确认",
+    "amount": "金额检查",
+    "settlement": "沉降"
+  },
+  "InventorySearchFilter": {
+    "selectOptions": "请选择一个或多个",
+    "brand": "关键",
+    "byPeriod": "按期间",
+    "itemNumber": "产品编号",
+    "inventoryStatus": "库存状态",
+    "enoughStock": "有货",
+    "littleStock": "库存短缺",
+    "noStock": "缺货",
+    "search": "Search",
+    "reset": "Reset"
+  },
+  "InventorySearchResults": {
+    "label": "搜索结果"
+  },
+  "OrderContentConfirmation": {
+    "page": "订单内容确认"
+  },
+  "TotalPaymentDetails": {
+    "mainLabel": "付款总额",
+    "order": "顺序",
+    "basePrice": "车身价格：",
+    "optionPrice": "期权价格：",
+    "productTotal": "产品总数：",
+    "totalPrice": "总量",
+    "deliveryDate": "交货时间"
+  },
+  "OrderListClothConfirmation": {
+    "cloth": "布"
+  },
+  "designatedAddressDialog": {
+    "dialogTitle": "请选择商店。",
+    "cancelBtn": "取消",
+    "inputBtn": "输入"
+  },
+  "DateRangePicker": {
+    "from": "从"
+  },
+  "PrivacyPolicy": {
+    "page": "订购"
+  },
+  "CustomerLoginInfo": { "customerName": "名", "customerId": "ID", "customerLoadButton": "负载" },
+  "Selectbox": {
+    "defaultMessage": "要选择"
+  }
+}

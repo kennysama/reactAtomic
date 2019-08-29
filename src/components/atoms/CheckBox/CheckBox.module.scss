@@ -1,0 +1,47 @@
+@import '../../../styles/variables';
+
+.checkGroup {
+  display: inline-block;
+  & + & {
+    margin-left: 34px;
+  }
+  span {
+    display: block;
+    position: relative;
+    height: 20px;
+    padding: 2px 0 2px 30px;
+    font-size: $font-size17;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: $color-white;
+      border: 1px solid $color-border-light-gray;
+      border-radius: $botton-radius;
+    }
+  }
+  input[type='checkbox'] {
+    display: none;
+    &:checked + span:before {
+      background: $color-link;
+      border: 1px solid $color-link;
+      border-radius: $botton-radius;
+    }
+    &:checked + span:after {
+      position: absolute;
+      content: '';
+      top: 7px;
+      left: 5px;
+      width: 10px;
+      height: 5px;
+      border-left: 1px solid $color-white;
+      border-bottom: 1px solid $color-white;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+}

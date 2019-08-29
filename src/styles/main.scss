@@ -1,0 +1,254 @@
+@import './_variables';
+@import './_reset';
+
+/* ---------------------------------------------------
+common
+--------------------------------------------------- */
+html {
+  background: $color-main-bg;
+  font-size: 14px;
+  /* 1rem = 14px */
+}
+body {
+  min-height: 100vh;
+  background: $color-main-bg;
+  font-family: $set-sans-serif;
+  font-size: 1rem;
+  color: $color-font-main;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  color: $color-link;
+  text-decoration: none;
+}
+.clearfix {
+  @include clearfix;
+}
+.cl {
+  clear: both;
+}
+
+.breakword {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+.underline {
+  font-weight: normal;
+  text-decoration: underline;
+}
+.line-through {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+b,
+strong,
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center !important;
+}
+.left {
+  text-align: left !important;
+}
+.right {
+  text-align: right !important;
+}
+
+.column {
+  @include flexbox;
+  @include flexbox-justify-space-between;
+  &__half {
+    width: calc(50% - 10px);
+  }
+  &__full {
+    width: 100%;
+  }
+}
+
+/* margin/padding */
+@for $i from 0 through 20 {
+  .mt#{$i * 5} {
+    margin-top: #{$i * 5}px !important;
+  }
+  .mb#{$i * 5} {
+    margin-bottom: #{$i * 5}px !important;
+  }
+  .ml#{$i * 5} {
+    margin-left: #{$i * 5}px !important;
+  }
+  .mr#{$i * 5} {
+    margin-right: #{$i * 5}px !important;
+  }
+  .pt#{$i * 5} {
+    padding-top: #{$i * 5}px !important;
+  }
+  .pb#{$i * 5} {
+    padding-bottom: #{$i * 5}px !important;
+  }
+  .pl#{$i * 5} {
+    padding-left: #{$i * 5}px !important;
+  }
+  .pr#{$i * 5} {
+    padding-right: #{$i * 5}px !important;
+  }
+}
+
+/* 入力欄 */
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+input[type='search'],
+input[type='url'],
+textarea {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 5px 12px;
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $botton-radius;
+  box-shadow: $box-shadow-inset;
+  line-height: 1.7;
+  font-size: $font-size16;
+  font-family: $set-sans-serif;
+  color: $color-font-main;
+  box-sizing: border-box;
+
+  &::-webkit-input-placeholder {
+    color: $color-font-placeholder;
+  }
+
+  &:disabled {
+    background-color: $color-bg-disabled;
+    border: 1px solid $color-bg-disabled;
+    color: $color-font-sub;
+  }
+  &:focus {
+    padding: 2px 9px;
+    background-color: $color-white;
+    border: 4px solid $color-border-focus;
+    border-radius: $botton-radius;
+  }
+  &::placeholder {
+    color: $color-font-placeholder;
+  }
+  &:-moz-placeholder {
+    color: $color-font-placeholder;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  &:focus:-moz-placeholder {
+    color: transparent;
+  }
+  &.readonly {
+    background-color: $color-bg-readonly !important;
+    border: 1px solid $color-bg-readonly !important;
+    color: $color-font-sub !important;
+    cursor: default !important;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* UIカスタマイズ　input */
+.MuiInput-underline::before {
+  display: none;
+}
+.MuiInput-underline::after {
+  display: none;
+}
+
+/* UIカスタマイズ datepicker */
+.MuiPopover-paper {
+  border-radius: $box-radius !important;
+  box-shadow: $box-shadow !important;
+}
+.MuiTypography-body2 {
+  font-family: $set-sans-serif !important;
+}
+.MuiPickersDay-current {
+  color: $color-font-brown !important;
+}
+.MuiPickersDay-daySelected {
+  background-color: $color-bg-brown !important;
+  color: $color-font-white !important;
+}
+
+/* UIカスタマイズ selectBox */
+.MuiMenuItem-root {
+  font-size: $font-size16 !important;
+}
+.MuiSelect-select.Mui-disabled {
+  background-color: $color-bg-readonly !important;
+  border: 1px solid $color-bg-readonly !important;
+  color: $color-font-sub !important;
+}
+
+// TODO: 後で直す
+.dialog,
+.dialog__contents {
+  // 勝手にflexbox化
+  // display: flex !important;
+  // justify-content: center !important;
+  align-items: center !important;
+  // position:fixed時の配置情報をリセット
+  padding-top: 0px !important;
+  transform: initial !important;
+}
+
+.dialog {
+  > div {
+    > div {
+      background-color: $backgroundBrown-color;
+    }
+  }
+
+  .dialog__contents {
+    .content-wrapper {
+      height: 200px;
+      width: 500px;
+      margin: 10px;
+    }
+
+    .dialog__contents__text {
+      // margin: 0 4px;
+      color: #373737;
+      font-weight: bold;
+      // padding-top: 24px !important;
+    }
+  }
+
+  .dialog__actions {
+    // margin: 0;
+    // padding: 0 4px 12px;
+    justify-content: space-around !important;
+  }
+}
+
+.material-icons {
+  &.icon {
+    &__large {
+      font-size: 55px;
+    }
+  }
+}
+
+.MuiInputBase-root.Mui-disabled,
+.Mui-disabled {
+  background-color: #dcdcdc;
+  cursor: not-allowed !important;
+}

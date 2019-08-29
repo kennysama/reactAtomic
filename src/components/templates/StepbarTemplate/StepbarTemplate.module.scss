@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+// @types
+
+#page {
+  .stepbar {
+    position: fixed;
+    left: 0;
+    top: $header-height;
+    z-index: 99;
+    width: 100%;
+    height: $stepper-height;
+    background-color: $color-main-bg;
+  }
+  .contents {
+    padding-top: $stepper-height;
+  }
+}
+@include layout-portrait {
+  //縦もち時
+  #page {
+    .stepbar {
+      top: calc(#{$header-height} * 2);
+    }
+  }
+}
