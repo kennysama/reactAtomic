@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start & json-server --watch src/mockups/jsonServer/mockup.json --port 4000  ",
+    "start": "json-server --watch src/mockups/jsonServer/mockup.json --port 4000 | react-scripts start",
     "build": "npm run build:deploy",
     "build:deploy": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "build:pwa-test": "cross-env PUBLIC_URL=/pwa-test-page/ react-scripts build",
