@@ -58,7 +58,7 @@
     "core-js": "3.0.1",
     "date-fns": "2.0.0-alpha.27",
     "lodash": "4.17.11",
-    "node-sass": "4.12.0",
+    "node-sass": "4.13.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-number-format": "4.0.8",
